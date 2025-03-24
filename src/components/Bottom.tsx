@@ -13,7 +13,7 @@ const navItems: NavItem[] = [
   { name: 'Profile', icon: <i className="fas fa-user"></i>, href: '/profile' },
 ];
 
-const BottomNavbar: React.FC = () => {
+const Bottom: React.FC = () => {
   return (
     <nav className="fixed bottom-0 left-0 right-0 bg-white border-t-2 border-gray-200 shadow-lg">
       <div className="flex justify-around items-center py-3">
@@ -32,4 +32,4 @@ const BottomNavbar: React.FC = () => {
   );
 };
 
-export default BottomNavbar;
+export default Bottom;
