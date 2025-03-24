@@ -1,20 +1,23 @@
 import React from 'react';
+import Card from './components/Card';
+import Top from './components/Top';
+import PaymentDetail from './components/PaymentDetail';
+import BottomNavbar from './components/BottomNavbar';
+import BottomButton from './components/BottomButton';
 
-
-
-import Bottom from './components/Bottom';
 
 const App: React.FC = () => {
   return (
  
       <div className="min-h-screen flex flex-col">
-        {/* <Routes>
-          <Route path="/" element={<div className="flex-1">Home Page</div>} />
-          <Route path="/search" element={<div className="flex-1">Search Page</div>} />
-          <Route path="/profile" element={<div className="flex-1">Profile Page</div>} />
-        </Routes> */}
+        <Top/>
+       <Card/>
+       {/* <BottomButton/> */}
+       <PaymentDetail/>
+    
+       <BottomNavbar/>
         
-        <Bottom />
+      
       </div>
    
   );
