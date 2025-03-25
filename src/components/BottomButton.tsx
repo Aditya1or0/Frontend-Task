@@ -41,7 +41,7 @@ const BottomButton: React.FC = () => {
       <Drawer open={isAcceptDrawerOpen} onOpenChange={setIsAcceptDrawerOpen}>
         <DrawerContent>
           <DrawerHeader>
-            <DrawerTitle className="flex left-0 ml-4 text-sky-800 mb-2">
+            <DrawerTitle className="text-left flex left-0 ml-4 text-sky-800 mb-2">
               Accept Partially
             </DrawerTitle>
             <DrawerDescription className="flex text-left ml-4 text-wrap">
@@ -49,7 +49,7 @@ const BottomButton: React.FC = () => {
               provide additional details if needed.
             </DrawerDescription>
           </DrawerHeader>
-          <div className="p-4">{/* Add your form or content here */}</div>
+
           <DrawerFooter className="flex justify-between">
             <div className="flex gap-2">
               <Button
@@ -69,10 +69,10 @@ const BottomButton: React.FC = () => {
       <Drawer open={isRejectDrawerOpen} onOpenChange={setIsRejectDrawerOpen}>
         <DrawerContent>
           <DrawerHeader>
-            <DrawerTitle className="text-xl font-semibold text-sky-800">
+            <DrawerTitle className="text-left text-xl font-semibold text-sky-800">
               Order Rejection
             </DrawerTitle>
-            <DrawerDescription className="text-gray-600 text-sm">
+            <DrawerDescription className="text-left text-gray-600 text-sm">
               Are you sure you want to reject this order? Please review the
               details carefully before proceeding, as this action cannot be
               undone.
@@ -111,23 +111,19 @@ const BottomButton: React.FC = () => {
               </RadioGroup>
             </div>
 
-            {selectedOption === "others" && (
-              <div className="mb-6">
-                <Label
-                  htmlFor="rejection-reason"
-                  className="block mb-2 text-sm"
-                >
-                  Reason For Order Rejection*
-                </Label>
-                <Textarea
-                  id="rejection-reason"
-                  placeholder="Please enter the reason"
-                  value={rejectionReason}
-                  onChange={(e) => setRejectionReason(e.target.value)}
-                  className="w-full border rounded-md resize-none h-24"
-                />
-              </div>
-            )}
+            <div className="mb-6">
+              <Label htmlFor="rejection-reason" className="block mb-2 text-sm">
+                Reason For Order Rejection*
+              </Label>
+              <Textarea
+                id="rejection-reason"
+                placeholder="Please enter the reason"
+                disabled={selectedOption !== "others"}
+                value={rejectionReason}
+                onChange={(e) => setRejectionReason(e.target.value)}
+                className="w-full border rounded-md resize-none h-24"
+              />
+            </div>
 
             <div className="flex gap-3 mt-8">
               <DrawerClose asChild>

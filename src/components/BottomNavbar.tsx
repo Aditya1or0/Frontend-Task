@@ -1,5 +1,6 @@
-import React from 'react';
-import { Home, ShoppingCart, FileText, User } from 'lucide-react';
+import React from "react";
+import { Home, ShoppingCart, FileText, User } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const BottomNavbar: React.FC = () => {
   return (
@@ -7,26 +8,34 @@ const BottomNavbar: React.FC = () => {
       <div className="flex justify-around items-center py-3">
         {/* Dashboard */}
         <div className="flex flex-col items-center">
-          <Home size={24} />
-          <span className="text-xs">Dashboard</span>
+          <Link to="/dashboard">
+            <Home size={24} />
+            <span className="text-xs">Dashboard</span>
+          </Link>
         </div>
 
         {/* Order */}
         <div className="flex flex-col items-center">
-          <ShoppingCart size={24} />
-          <span className="text-xs">Order</span>
+          <Link to="/order">
+            <ShoppingCart size={24} />
+            <span className="text-xs">Order</span>
+          </Link>
         </div>
 
         {/* Reports */}
         <div className="flex flex-col items-center">
-          <FileText size={24} />
-          <span className="text-xs">Reports</span>
+          <Link to="/reports">
+            <FileText size={24} />
+            <span className="text-xs">Reports</span>
+          </Link>
         </div>
 
         {/* Profile */}
         <div className="flex flex-col items-center">
-          <User size={24} />
-          <span className="text-xs">Profile</span>
+          <Link to="/profile">
+            <User size={24} />
+            <span className="text-xs">Profile</span>
+          </Link>
         </div>
       </div>
     </div>
