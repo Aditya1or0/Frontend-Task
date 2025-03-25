@@ -1,9 +1,9 @@
 import React from 'react'
 import BottomButton from './BottomButton'
 
-const PaymentDetail :React.FC= () => {
+const PaymentDetail: React.FC = () => {
   return (
-    <div className='bg-green-300/20'>
+    <div className='bg-green-300/20 relative'>  {/* Added relative to the wrapper */}
       <div className='m-3'>
         <h1 className='font-bold text-sky-800 text-xl '>Payment Details Batch 1</h1>
         <div className='flex justify-between'>
@@ -19,7 +19,7 @@ const PaymentDetail :React.FC= () => {
           <span>N/A</span>
         </div>
         <div className='flex justify-between'>
-          <h1 className='text-gray-900 font-semibold'>ROund Off</h1>
+          <h1 className='text-gray-900 font-semibold'>Round Off</h1>
           <span>N/A</span>
         </div>
         <div className='flex justify-between'>
