@@ -1,0 +1,225 @@
+{
+    "pendingAcceptance": {
+      "newRequests": [
+        {
+          "orderId": "2025-126532",
+          "status": "new-request",
+          "customerName": "John Doe",
+          "address": "123, Main Street, Bangalore",
+          "amount": 175.9,
+          "quantity": 4,
+          "createdDate": 1741774632,
+          "createdTime": 1741774632,
+          "medicineDetails": [
+            {
+              "id": 1,
+              "medicineName": "Paracetamol 500 Mg",
+              "mrp": 50,
+              "quantity": 2,
+              "manufacturer": "Sun Pharmaceutical",
+              "pharmacyReceivable": 100
+            },
+            {
+              "id": 2,
+              "medicineName": "Augmentin 650 Mg",
+              "mrp": 360,
+              "quantity": 2,
+              "manufacturer": "Dr. Reddy's Laboratories",
+              "pharmacyReceivable": 20
+            },
+            {
+              "id": 3,
+              "medicineName": "Amoxicillin 250 Mg",
+              "mrp": 650,
+              "quantity": 1,
+              "manufacturer": "Zydus LifeSciences",
+              "pharmacyReceivable": 50
+            },
+            {
+              "id": 4,
+              "medicineName": "Benadryl 100 Ml",
+              "mrp": 130,
+              "quantity": 1,
+              "manufacturer": "Ajanta Pharma",
+              "pharmacyReceivable": 30
+            }
+          ]
+        }
+      ]
+    },
+    "pendingDelivery": {
+      "awaitingDispatch": [
+        {
+          "orderId": "2025-126532",
+          "status": "new-request",
+          "customerName": "John Doe",
+          "address": "123, Main Street, Bangalore",
+          "amount": 175.9,
+          "quantity": 4,
+          "createdDate": 1741774632,
+          "createdTime": 1741774632,
+          "medicineDetails": [
+            {
+              "id": 1,
+              "medicineName": "Paracetamol 500 Mg",
+              "mrp": 50,
+              "quantity": 2,
+              "manufacturer": "Sun Pharmaceutical",
+              "pharmacyReceivable": 100
+            },
+            {
+              "id": 2,
+              "medicineName": "Augmentin 650 Mg",
+              "mrp": 360,
+              "quantity": 2,
+              "manufacturer": "Dr. Reddy's Laboratories",
+              "pharmacyReceivable": 20
+            },
+            {
+              "id": 3,
+              "medicineName": "Amoxicillin 250 Mg",
+              "mrp": 650,
+              "quantity": 1,
+              "manufacturer": "Zydus LifeSciences",
+              "pharmacyReceivable": 50
+            },
+            {
+              "id": 4,
+              "medicineName": "Benadryl 100 Ml",
+              "mrp": 130,
+              "quantity": 1,
+              "manufacturer": "Ajanta Pharma",
+              "pharmacyReceivable": 30
+            }
+          ]
+        }
+      ],
+      "outForDelivery": [
+        {
+          "orderId": "2025-126532",
+          "status": "new-request",
+          "customerName": "John Doe",
+          "address": "123, Main Street, Bangalore",
+          "amount": 175.9,
+          "quantity": 4,
+          "createdDate": 1741774632,
+          "createdTime": 1741774632,
+          "medicineDetails": [
+            {
+              "id": 1,
+              "medicineName": "Paracetamol 500 Mg",
+              "mrp": 50,
+              "quantity": 2,
+              "manufacturer": "Sun Pharmaceutical",
+              "pharmacyReceivable": 100
+            },
+            {
+              "id": 2,
+              "medicineName": "Augmentin 650 Mg",
+              "mrp": 360,
+              "quantity": 2,
+              "manufacturer": "Dr. Reddy's Laboratories",
+              "pharmacyReceivable": 20
+            },
+            {
+              "id": 3,
+              "medicineName": "Amoxicillin 250 Mg",
+              "mrp": 650,
+              "quantity": 1,
+              "manufacturer": "Zydus LifeSciences",
+              "pharmacyReceivable": 50
+            },
+            {
+              "id": 4,
+              "medicineName": "Benadryl 100 Ml",
+              "mrp": 130,
+              "quantity": 1,
+              "manufacturer": "Ajanta Pharma",
+              "pharmacyReceivable": 30
+            }
+          ]
+        },
+        {
+          "orderId": "2025-126533",
+          "status": "modified-request",
+          "customerName": "Jane Doe",
+          "address": "123, Main Street, Bangalore",
+          "amount": 175.9,
+          "quantity": 4,
+          "createdDate": 1741774632,
+          "createdTime": 1741774632
+        }
+      ]
+    },
+    "closed": {
+      "completed": [
+        {
+          "orderId": "2025-126532",
+          "status": "new-request",
+          "customerName": "John Doe",
+          "address": "123, Main Street, Bangalore",
+          "amount": 175.9,
+          "quantity": 4,
+          "createdDate": 1741774632,
+          "createdTime": 1741774632,
+          "medicineDetails": [
+            {
+              "id": 1,
+              "medicineName": "Paracetamol 500 Mg",
+              "mrp": 50,
+              "quantity": 2,
+              "manufacturer": "Sun Pharmaceutical",
+              "pharmacyReceivable": 100
+            },
+            {
+              "id": 2,
+              "medicineName": "Augmentin 650 Mg",
+              "mrp": 360,
+              "quantity": 2,
+              "manufacturer": "Dr. Reddy's Laboratories",
+              "pharmacyReceivable": 20
+            },
+            {
+              "id": 3,
+              "medicineName": "Amoxicillin 250 Mg",
+              "mrp": 650,
+              "quantity": 1,
+              "manufacturer": "Zydus LifeSciences",
+              "pharmacyReceivable": 50
+            },
+            {
+              "id": 4,
+              "medicineName": "Benadryl 100 Ml",
+              "mrp": 130,
+              "quantity": 1,
+              "manufacturer": "Ajanta Pharma",
+              "pharmacyReceivable": 30
+            }
+          ]
+        },
+        {
+          "orderId": "2025-126533",
+          "status": "modified-request",
+          "customerName": "Jane Doe",
+          "address": "123, Main Street, Bangalore",
+          "amount": 175.9,
+          "quantity": 4,
+          "createdDate": 1741774632,
+          "createdTime": 1741774632
+        }
+      ],
+      "cancelled": [],
+      "rejected": [
+        {
+          "orderId": "2025-126532",
+          "status": "rejected",
+          "customerName": "John Doe",
+          "address": "123, Main Street, Bangalore",
+          "amount": 175.9,
+          "quantity": 4,
+          "createdDate": 1741774632,
+          "createdTime": 1741774632
+        }
+      ]
+    }
+  }
